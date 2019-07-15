@@ -1,0 +1,22 @@
+BaseURL = "https://dontbemepodcast.com/"
+# BaseURL = "localhost:1313/"
+languageCode = "en-us"
+title = "Don't Be Me Podcast"
+theme = "dontbeme"
+relativeURLs = true
+disableKinds = ["section","taxonomy","taxonomyTerm"]
+
+[params]
+language = "en-us"
+email = "paul@dontbemepodcast.com"
+podcastImageURL = "img/ituneslogo.png"
+atomLink = "https://dontbemepodcast.com/rss.xml"
+itunesAuthor = "Don't Be Me Podcast"
+itunesSummary = "A Comedic Biographical Serious Podcast"
+itunesImage = "url to image"
+itunesExplicit = "yes"
+subtitle = "A Comedic Biographical Serious Podcast"
+copyright = "Copyleft Don't Be Me Podcast 2019"
+description = "This podcast is about my life, what I have learned and what I would have done different. My target audience is anyone who wants to listen but is mainly aimed at my kids. By doing this podcast they can one day hear me talk about the things I could not when they were young."
+realname = "Paul Webber"
+itunesCategory = "Comedy"

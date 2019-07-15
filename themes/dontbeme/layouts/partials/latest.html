@@ -1,0 +1,27 @@
+<div class="w3-content w3-justify w3-text-orange" id="latest">
+    <h2 class="w3-text-orange">Latest Episode</h2>
+    <h3 class="w3-text-orange">
+        Episode # 
+        {{ with .Site.GetPage "ep005"}}
+            {{.Params.episodeNumber}}
+        {{end}}
+         - 
+        {{ with .Site.GetPage "ep005"}}
+            {{.Params.description}}
+        {{end}}
+        - 
+        {{ with .Site.GetPage "ep005"}}
+            {{ .Date.Format "January 2, 2006" }}
+        {{end}}
+    </h3>
+    <p class="w3-text-orange">
+        {{ with .Site.GetPage "ep005"}}
+            {{.Content}}
+        {{end}}
+    </p>
+    <audio controls style="width: 100%;">
+        <source src="{{ range first 1 .Pages}}{{.Params.audioFile}}{{end}}" type="audio/mpeg">
+        <p>Your browser doesn't support HTML5 audio. Here is a <a href="myAudio.mp4">link to the audio</a> instead.</p>
+    </audio>
+    <a href="{{ range first 1 .Pages}}{{.Params.audioFile}}{{end}}" download="{{ range first 1 .Pages}}{{.Params.audioFile}}{{end}}" class="w3-btn w3-orange">Download Episode {{.Params.episodeNumber}}</a>
+</div>
