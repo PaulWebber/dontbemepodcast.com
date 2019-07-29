@@ -9,6 +9,25 @@
                 <th>Description</th>
                 <th>Length</th>
             </tr>
+
+            <tr class="w3-hover-green" data-href="ep006">
+                <td>
+                    {{ with .Site.GetPage "ep006"}}
+                        {{.Params.episodeNumber}}
+                    {{end}}
+                </td>
+                <td>
+                    {{ with .Site.GetPage "ep006"}}
+                        {{.Params.description}}
+                    {{end}}
+                </td>
+                <td>
+                    {{ with .Site.GetPage "ep006"}}
+                        {{.Params.length}}
+                    {{end}}
+                </td>
+            </tr>
+
             <tr class="w3-hover-green" data-href="ep005">
                 <td>
                     {{ with .Site.GetPage "ep005"}}
